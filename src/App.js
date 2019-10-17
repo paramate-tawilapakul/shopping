@@ -30,6 +30,12 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
+    /*Calling the unsubscribe function 
+      when the component is about to unmount is the best way
+      to make sure we don't get any memory leaks in our application
+      related to listeners still being open even if the component 
+      that cares about the listener 
+      is no longer on the page. */
     this.unsubscribeFromAuth();
   }
 
