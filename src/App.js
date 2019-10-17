@@ -4,21 +4,18 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/homepage/HomePage';
-
-const HatsPage = () => {
-  return (
-    <div>
-      <h1>Hats Page</h1>
-    </div>
-  );
-};
+import ShopPage from './pages/shoppage/ShopPage';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/hats' component={HatsPage} />
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/shop' component={ShopPage} />
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 
