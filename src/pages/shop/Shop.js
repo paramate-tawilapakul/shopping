@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SHOP_DATA from './shop.data';
 import CollectionPreview from '../../components/collection-preview/CollectionPreview';
 
-export class ShopPage extends Component {
+export class Shop extends Component {
   state = {
     collections: SHOP_DATA
   };
@@ -17,4 +17,4 @@ export class ShopPage extends Component {
     );
   }
 }
-export default ShopPage;
+export default Shop;
