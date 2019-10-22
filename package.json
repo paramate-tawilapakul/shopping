@@ -2,6 +2,10 @@
   "name": "shopping",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.10.0",
+    "npm": "6.12.0"
+  },
   "dependencies": {
     "firebase": "^7.2.1",
     "node-sass": "^4.12.0",
